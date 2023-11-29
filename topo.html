@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+  <head>
+      <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita+One|Roboto+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>SCAEM</title>
+    <style>
+      .topo1{
+          background-color:rgb(207,42,39);
+      }
+
+      .topo2{
+          background-color: rgb(8,83,148);
+      }
+      .escri{
+          color:rgb(207,42,39);
+      }
+
+    .imagem{
+        height:130px;
+        border-radius: 15%;
+        
+      }
+      .imagem2{
+        height:80px;
+        
+        float: left;
+        margin-left: 5px;
+        
+      }
+      .centralizar{
+        text-align: center;
+      }
+
+      .titulo{
+        font-family: "Lilita One", sans-serif;
+        font-size: 18px;
+    
+      }
+      .titulo2{
+        font-family: "Roboto Slab", sans-serif;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+        margin-left: 18px;
+        
+      }
+
+      .baixo {
+        margin: auto;
+        width: 40;
+        bottom: 4.6%;
+        position: fixed;
+        }
+
+        .baixo2 {
+        bottom: 15%;
+        position: fixed;
+        }
+      
+  </style>
+  </head>
+
+      <body>
+          <header>
+              
+                <nav class="topo1 " role="navigation">
+                    <!-- código acima determina a cor  da barra de cima --> 
+                    <div class="  topo1 "><a href="#" data-target="slide-out" class="sidenav-trigger Large"><i class="material-icons">menu</i></a></div>
+                    <div class="nav-wrapper container topo1"><a id="logo-container" href="index.php" class="brand-logo center titulo yellow-text "> SCAEM </a></div>
+        
+                <!-- Escrita da parte de cima -->
+                </nav>
+               
+        
+              
+                <ul id="slide-out" class="sidenav sidenav-fixed  light-blue lighten-5">
+                    <li><div class="user-view topo2 centralizar">
+                        <div class="background">
+                          
+                        </div>  
+                        <img class=" imagem " src="escola.png"><br>
+        
+                        <a href="index.php"><span class="white-text titulo">EMEI José Maria Argemi Filho</span></a>
+        
+                      </div></li>
+        
+                      <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                          <strong><div class="collapsible-header"> <i class="material-icons ">perm_identity</i><a class="black-text" href="consultarFun.php">Funcionários</a> <i class="material-icons right"></i></div></strong>
+                          <div class="collapsible-body light-blue lighten-5 "><ul>
+                            <strong><li><a href="formCadFun.php"><i class="material-icons">person_add</i>Cadastrar Funcionário </a></li></strong>
+                          </ul>
+                        </div>
+                        </li>
+                        <div class="divider"></div>
+                      </ul>
+
+                      <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                          <strong><div class="collapsible-header"> <i class="material-icons ">window</i>Almoxarifados</div></strong>
+                          <div class="collapsible-body light-blue lighten-5 "><ul>
+                            <strong><li><a href="formCadItem.php"><i class="material-icons">library_add</i>Cadastrar Item </a></li></strong>
+                            <strong><li><a href="consultarGeral.php"><i class="material-icons">shelves</i>Almoxarifado  Geral </a></li></strong>
+                            <strong><li><a href="consultarPeda.php"><i class="material-icons">door_sliding</i>Almoxarifado Pedagógico</a></li></strong>
+                          </ul>
+                        </div>
+                        </li>
+                        <div class="divider"></div>
+                      </ul>
+                      <ul class="collapsible">
+        
+        
+                      <li><strong><div class="collapsible-header"><a class="black-text" href=""><i class="material-icons">description</i>Relatórios Semanais</a></div></strong>
+                        <div class="divider"></div>
+                      </li>
+                </ul>
+
+                <ul class="collapsible right-aling">
+                <div class="baixo2">
+                  <div class="divider"></div>
+                  <li ><strong><div class="collapsible-header"><a class="black-text" href="logout.php"><i class="material-icons">power_settings_new</i>Sair</a></div></strong>></li>
+                    </div>
+                  </div>
+                </ul>
+
+                <div class="baixo">
+                    <div class="divider "></div>
+                        <li><div class=" ">
+          
+                              <img class=" imagem2 " src="municipio.png">
+                              <p class="titulo2 center">Prefeitura Municipal de Uruguiana</p>
+                              <!-- <p class="titulo2">Prefeitura Municipal de Uruguiana</p> -->
+          
+                        </div></li>
+                      </div>
+                    </div>
+              
+            </header>
+
+  
+
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+              
+        <script>
+              $(document).ready(function(){
+              $('.collapsible').collapsible();
+              });
+              
+               $(document).ready(function(){
+              $('.sidenav').sidenav();
+               });
+        </script>
+      </body>
+    </html>
